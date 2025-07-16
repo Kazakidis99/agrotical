@@ -1,5 +1,5 @@
 
-# 🌱 Agrotical – Crop Farming Management
+# Agrotical – Crop Farming Management
 
 **Agrotical** is a full-stack application that empowers farmers to **digitally manage fields, crops, and production economics**. 
 Built with Spring Boot backend and React.js/Tailwind frontend, this project allows users to register fields, input crop parameters, calculate results (profit, cost, yield), and improve the economic management of your crops and farms.
@@ -8,7 +8,7 @@ Built with Spring Boot backend and React.js/Tailwind frontend, this project allo
 
 ---
 
-## 🧩 About
+##  About
 
 Motivated by the need for efficient farm management, Agrotical provides farmers a system to:
 
@@ -17,16 +17,15 @@ Motivated by the need for efficient farm management, Agrotical provides farmers 
 - Visualize insights per field and overall performance
 
 
-
 ---
 
-## 🛠️ Features
+##  Features
 
-- 🔐 Authentication via username/password  
-- 🚜 Field CRUD: add and manage fields with name & area  
-- 🌾 Crop registration: input irrigation/fertilization/spraying flags  
-- 📊 Result computation: auto-calculate production, revenue, expenses, profit  
-- 📋 Data visualization: summary tables and charts 
+- Authentication via username/password  
+- Field CRUD: add and manage fields with name & area  
+- Crop registration: input irrigation/fertilization/spraying flags  
+- Result computation: auto-calculate production, revenue, expenses, profit  
+- Data visualization: summary tables and charts 
 
 
 - Clean architecture with Builder & Factory & Adapter patterns for further development 
@@ -35,7 +34,7 @@ Motivated by the need for efficient farm management, Agrotical provides farmers 
 
 ---
 
-## 🧰 Technologies
+##  Technologies
 
 | Layer        | Technology                             |
 |--------------|----------------------------------------|
@@ -45,36 +44,36 @@ Motivated by the need for efficient farm management, Agrotical provides farmers 
 
 ---
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 agrotical/
 ├── src/main/java/com/agrotical
-│   ├── controller/        # REST API endpoints
-│   ├── service/           # Business logic
-│   ├── repository/        # DB access layer
-│   ├── entity/            # JPA Entities
-│   └── dto/               # Data Transfer Objects & Adapter
+│   ├── controller/        
+│   ├── service/          
+│   ├── repository/        
+│   ├── entity/            
+│   └── dto/               
 └── src/main/resources
-    └── application.properties  # DB & server configs
+    └── application.properties  
 ```
 
 ```
 agrotical-frontend/
 ├── public/
 ├── src/
-│   ├── components/        # UI/UX components
-│   ├── pages/             # Main views (Login, Dashboard, Summary, AddField, Results)
-│   ├── services/          # Axios API clients
-│   ├── App.js             # Routing & layout
-│   └── index.js           # Entry point
-└── tailwind.config.js     # Styling setup
+│   ├── components/       
+│   ├── pages/             
+│   ├── services/          
+│   ├── App.js             
+│   └── index.js          
+└── tailwind.config.js    
 
 ```
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Java 17, Node.js, PostgreSQL installed ,"create React app"
@@ -103,7 +102,7 @@ npm start
 
 ---
 
-##  Usage Workflow
+##  Workflow
 
 1. Register/Login with a username & password  
 2. Create fields with specific area (e.g. "Χωράφι" – 10 στρέμματα)  
@@ -124,12 +123,6 @@ cd agrotical
 ./mvnw test
 ```
 
-## Author
 
 |  Name : Konstantinos Kazakidis   |
 
-
-
-## 📄 License
-
-This project is open-sourced under the MIT License – see the [LICENSE](LICENSE) file for details.
