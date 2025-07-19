@@ -23,7 +23,7 @@ class CropServiceTest {
     }
 
     @Test
-    void testUpdateCrop_whenCropExists_shouldUpdateFields() {
+    void update_whenExists() {
         Long cropId = 1L;
 
         
@@ -53,7 +53,7 @@ class CropServiceTest {
     }
 
     @Test
-    void testUpdateCrop_whenCropDoesNotExist_shouldReturnEmpty() {
+    void update_whenMissing() {
         Long cropId = 2L;
         Crop newCropData = new Crop();
         newCropData.setName("New");
