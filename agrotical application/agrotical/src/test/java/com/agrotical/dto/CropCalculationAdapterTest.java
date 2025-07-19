@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CropCalculationAdapterTest {
 
     @Test
-    void testToEntity_shouldMapFieldsCorrectly() {
+    void toEntity_mapsFieldsCorrectly() {
         CropCalculationRequest request = new CropCalculationRequest();
         request.setCropType("Βαμβάκι");
 
@@ -25,7 +25,7 @@ class CropCalculationAdapterTest {
     }
 
     @Test
-    void testToDto_shouldMapTypeCorrectly() {
+    void toDto_mapsTypeCorrectly() {
         Crop crop = new Crop();
         crop.setType("Καλαμπόκι");
 
