@@ -23,7 +23,7 @@ class UserControllerTest {
     }
 
     @Test
-    void testLogin_whenUserExistsAndPasswordMatches_shouldReturnUserId() {
+    void loginSuccess_returnsUserId() {
         User inputUser = new User();
         inputUser.setUsername("giorgos");
         inputUser.setPassword("1234");
@@ -43,7 +43,7 @@ class UserControllerTest {
     }
 
     @Test
-    void testLogin_whenUserDoesNotExist_shouldReturnUnauthorized() {
+    void loginFails_userNotFound() {
         User inputUser = new User();
         inputUser.setUsername("nonexistent");
         inputUser.setPassword("1234");
@@ -58,7 +58,7 @@ class UserControllerTest {
     }
 
     @Test
-    void testLogin_whenPasswordIsIncorrect_shouldReturnUnauthorized() {
+    void loginFails_wrongPassword() {
         User inputUser = new User();
         inputUser.setUsername("giorgos");
         inputUser.setPassword("wrongpass");
