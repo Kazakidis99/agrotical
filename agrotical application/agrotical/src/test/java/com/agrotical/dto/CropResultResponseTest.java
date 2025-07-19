@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class CropResultResponseTest {
 
     @Test
-    void testConstructor_withValidField_shouldCalculateCorrectly() {
+    void validField() {
         Field field = new Field();
         field.setId(10L);
         field.setName("Χωράφι 1");
@@ -39,7 +39,7 @@ class CropResultResponseTest {
     }
 
     @Test
-    void testConstructor_withNullField_shouldFallbackToDefaults() {
+    void nullField() {
         CropResult result = new CropResult();
         result.setField(null);
         result.setCropType("Καλαμπόκι");
