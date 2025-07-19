@@ -25,7 +25,7 @@ class CropResultServiceTest {
     }
 
     @Test
-    void testCalculateSummaryForUser_withMockData() {
+    void summaryForUser() {
         Long userId = 1L;
 
         
