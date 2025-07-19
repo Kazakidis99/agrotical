@@ -28,7 +28,7 @@ class FieldServiceTest {
 
 
     @Test
-    void testCreateField_whenUserExists_shouldSaveField() {
+    void create_whenUserExists() {
         Long userId = 1L;
 
         User user = new User();
@@ -51,7 +51,7 @@ class FieldServiceTest {
     }
 
     @Test
-    void testCreateField_whenUserNotFound_shouldThrowException() {
+    void create_whenUserMissing() {
         Long userId = 999L;
         Field field = new Field();
 
