@@ -47,7 +47,7 @@ const Sidebar = ({ username, onToggleSidebar }) => {
         <>
           <div className="flex flex-col items-center mb-6">
             <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-green-700 text-2xl font-bold shadow">
-              👤
+              👨‍🌾
             </div>
             <div className="mt-2 text-sm">
               Καλωσήρθες, <b>{username}</b>
